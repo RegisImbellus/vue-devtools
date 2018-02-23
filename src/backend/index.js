@@ -214,7 +214,7 @@ function flush () {
     instances: findQualifiedChildrenFromList(rootInstances)
   })
   if (process.env.NODE_ENV !== 'production') {
-    console.log(`[flush] serialized ${captureCount} instances, took ${window.performance.now() - start}ms.`)
+    // console.log(`[flush] serialized ${captureCount} instances, took ${window.performance.now() - start}ms.`)
   }
   bridge.send('flush', payload)
 }
